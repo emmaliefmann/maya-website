@@ -1,0 +1,24 @@
+@use "variables" as *;
+
+.footer {
+  background: black;
+  width: 100%;
+  padding: 10px;
+  @include flexboxCenter(column);
+  p {
+    color: white;
+    margin: 0;
+  }
+  .socials {
+    width: 50%;
+    background-color: red;
+    display: flex;
+    svg {
+      color: white;
+      width: 20px;
+    }
+  }
+  .icon {
+    color: white;
+  }
+}

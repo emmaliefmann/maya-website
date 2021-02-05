@@ -1,0 +1,15 @@
+//color palette
+$main-color: #948e88;
+$dark-color: #334347;
+$light-color: #889194;
+
+//fonts
+$text-font: "Roboto", sans-serif;
+$title-font: "Bodoni Moda", serif;
+//flexbox mixins
+@mixin flexboxCenter($direction) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: center;
+  justify-content: center;
+}
