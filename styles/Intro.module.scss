@@ -1,3 +1,55 @@
-.collage {
-  width: 50%;
+@use "variables" as *;
+
+.intro {
+  width: 100%;
+  @include flexboxCenter(row);
+
+  .collage {
+    width: 100%;
+    border: 1px solid black;
+    height: 800px;
+    position: relative;
+    div {
+      background-color: $light-color;
+      position: absolute;
+      right: 40px;
+    }
+    .image2 {
+      width: 600px;
+      height: 400px;
+      position: absolute;
+      right: 0;
+    }
+    .image1 {
+      width: 400px;
+      height: 600px;
+      position: absolute;
+    }
+  }
+}
+.about {
+  h3 {
+    font-size: 35px;
+  }
+  div {
+    @include flexboxJust;
+    div {
+      width: 60%;
+    }
+  }
+}
+.featured {
+  width: 100%;
+  background-color: $light-color;
+
+  .container {
+    @include flexboxJust;
+    padding: 20px;
+    div {
+      width: 20%;
+      @include flexboxCenter(column);
+      border: 1px solid black;
+      background-color: white;
+    }
+  }
 }

@@ -1,0 +1,37 @@
+@use "variables" as *;
+
+.container {
+  width: 100%;
+  .categories {
+    width: 80%;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    button {
+      margin: 0px 5px;
+    }
+  }
+  .row {
+    @include flexboxJust;
+    padding: 10px;
+  }
+  .card {
+    @include flexboxCenter(column);
+    width: 30%;
+    margin: 20px;
+    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+    .image {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .description {
+      padding: 10px;
+      .invisible {
+        display: none;
+      }
+    }
+  }
+}

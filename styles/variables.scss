@@ -13,3 +13,8 @@ $title-font: "Bodoni Moda", serif;
   align-items: center;
   justify-content: center;
 }
+@mixin flexboxJust {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
