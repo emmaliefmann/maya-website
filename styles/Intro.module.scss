@@ -28,28 +28,32 @@
   }
 }
 .about {
+  width: 100%;
+  @include flexboxCenter(column);
   h3 {
     font-size: 35px;
   }
-  div {
-    @include flexboxJust;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    width: 80vw;
+    min-height: 700px;
+    img {
+      width: 400px;
+      height: 600px;
+      position: absolute;
+    }
     div {
       width: 60%;
-    }
-  }
-}
-.featured {
-  width: 100%;
-  background-color: $light-color;
-
-  .container {
-    @include flexboxJust;
-    padding: 20px;
-    div {
-      width: 20%;
-      @include flexboxCenter(column);
-      border: 1px solid black;
-      background-color: white;
+      background-color: $main-color;
+      z-index: 1;
+      position: absolute;
+      right: 260px;
+      bottom: 67px;
+      padding: 25px;
+      box-shadow: rgb(0 0 0 / 40%) 0px 12px 12px 0px;
     }
   }
 }

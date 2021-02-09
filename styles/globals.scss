@@ -6,7 +6,18 @@ body {
   margin: 0;
   font-family: $text-font;
 }
-
+header {
+  padding: 20px;
+  h1 {
+    font-size: 45px;
+    text-align: center;
+    margin: 15px;
+    letter-spacing: 4px;
+  }
+}
+section {
+  margin: 20px 0px;
+}
 h1,
 h2,
 h3,
@@ -14,6 +25,7 @@ h4,
 h5,
 h6 {
   font-family: $title-font;
+  font-size: 25px;
 }
 a {
   color: inherit;
@@ -32,7 +44,7 @@ ul {
 }
 
 button {
-  font-size: 1.1rem;
+  font-size: inherit;
   cursor: pointer;
   padding: 3px 6px;
   border: 2px solid $dark-color;

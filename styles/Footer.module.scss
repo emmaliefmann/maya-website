@@ -4,20 +4,27 @@
   background: black;
   width: 100%;
   padding: 10px;
-  @include flexboxCenter(column);
-  p {
-    color: white;
-    margin: 10px;
-  }
-  .socials {
-    padding: 10px;
-    width: 150px;
-    display: flex;
-    justify-content: space-around;
-    svg {
+  @include flexboxCenter(row);
+  .container {
+    @include flexboxCenter(column);
+
+    width: 30%;
+    .socials {
+      padding: 10px;
+      width: 150px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      svg {
+        color: white;
+        width: 20px;
+        margin: 0 5px;
+      }
+    }
+    p,
+    a {
       color: white;
-      width: 20px;
-      margin: 0 5px;
+      margin: 10px;
     }
   }
 }

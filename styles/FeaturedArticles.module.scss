@@ -1,0 +1,18 @@
+@use "variables" as *;
+.featured {
+  width: 100%;
+  padding: 10px;
+  background-color: $light-color;
+  h3 {
+    font-size: 35px;
+  }
+  .container {
+    @include row(space-between);
+
+    div {
+      @include card(22%);
+      margin: 0px;
+      background-color: white;
+    }
+  }
+}

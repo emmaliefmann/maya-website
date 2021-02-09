@@ -2,8 +2,10 @@
 
 .container {
   width: 100%;
+  @include flexboxCenter(column);
+
   .categories {
-    width: 80%;
+    min-width: 1000px;
     padding: 20px;
     display: flex;
     justify-content: flex-start;
@@ -13,25 +15,11 @@
     }
   }
   .row {
-    @include flexboxJust;
-    padding: 10px;
+    @include row(space-around);
+    width: 100%;
   }
   .card {
-    @include flexboxCenter(column);
-    width: 30%;
-    margin: 20px;
-    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
-    .image {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .description {
-      padding: 10px;
-      .invisible {
-        display: none;
-      }
-    }
+    @include card(30%);
+    max-width: 300px;
   }
 }

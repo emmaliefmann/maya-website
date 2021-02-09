@@ -18,3 +18,28 @@ $title-font: "Bodoni Moda", serif;
   justify-content: space-between;
   align-items: center;
 }
+@mixin row($spacing) {
+  display: flex;
+  justify-content: $spacing;
+  align-items: center;
+  padding: 10px;
+}
+@mixin card($width) {
+  @include flexboxCenter(column);
+  width: $width;
+  margin: 20px;
+  box-shadow: rgb(0 0 0 / 40%) 0px 12px 12px 0px;
+  .image {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .description {
+    width: 100%;
+    padding: 10px;
+    .invisible {
+      display: none;
+    }
+  }
+}

@@ -5,7 +5,9 @@ const Nav = () => {
     return (
         <nav className={styles.nav}>
             <div className="logo">
-                <p>logo</p>
+                <Link href='/'>
+                    <p>logo</p>
+                </Link>
             </div>
             <ul>
                 <li>
