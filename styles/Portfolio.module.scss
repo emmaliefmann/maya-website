@@ -2,11 +2,14 @@
 
 .container {
   width: 100%;
-  @include flexboxCenter(column);
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-bottom: 70px;
   .categories {
     min-width: 1000px;
-    padding: 20px;
+    padding: 20px 40px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -19,7 +22,9 @@
     width: 100%;
   }
   .card {
-    @include card(30%);
-    max-width: 300px;
+    @include card(300px);
+    .description {
+      min-height: 175px;
+    }
   }
 }

@@ -2,15 +2,16 @@
 .featured {
   width: 100%;
   padding: 10px;
-  background-color: $light-color;
+  margin-bottom: 50px;
   h3 {
     font-size: 35px;
   }
   .container {
-    @include row(space-between);
-
+    @include row(space-around);
+    padding: 30px 0px;
     div {
       @include card(22%);
+      max-width: 200px;
       margin: 0px;
       background-color: white;
     }

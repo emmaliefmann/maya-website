@@ -1,10 +1,58 @@
 @use "variables" as *;
 
 .mediaCard {
-  @include flexboxCenter(row);
-  div {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  img {
+    width: 420px;
+    opacity: 0.9;
+  }
+  .rightContainer {
     width: 60%;
     padding: 20px;
-    background-color: $light-color;
+    background-color: $tv-white;
+    @include flexboxCenter(column);
+    h1 {
+      font-size: 40px;
+      letter-spacing: 3px;
+    }
+    .socials {
+      @include flexboxJust;
+      width: 50%;
+      svg {
+        width: 30px;
+      }
+    }
+  }
+}
+
+.divider {
+  width: 80%;
+  height: 1px;
+  border: 1px solid $dark-color;
+  margin: 60px 0px;
+}
+
+.recommendations {
+  h2 {
+    font-size: 40px;
+    letter-spacing: 4px;
+  }
+  .tile {
+    @include flexboxJust;
+    padding: 40px 20px;
+    img {
+      border-radius: 50%;
+    }
+    div {
+      @include flexboxCenter(column);
+      padding: 30px;
+      align-items: flex-start;
+      p {
+        font-size: 17px;
+      }
+    }
   }
 }

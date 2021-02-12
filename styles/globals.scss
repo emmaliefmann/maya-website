@@ -47,13 +47,13 @@ button {
   font-size: inherit;
   cursor: pointer;
   padding: 3px 6px;
-  border: 2px solid $dark-color;
+  border: 2px solid black;
   background: transparent;
-  color: $dark-color;
+  color: black;
   transition: all 0.5s ease;
   font-family: $text-font;
   &:hover {
-    background-color: $dark-color;
+    background-color: black;
     color: white;
   }
 }

@@ -29,7 +29,7 @@ const portfolioPage = () => {
                     <div className={styles.card}>
                         <div className={styles.image}>
                             <a href="https://projet5.emmaliefmann.com/index.php?action=allrecipes">
-                                <img src="https://picsum.photos/300/300" />
+                                <img src="https://picsum.photos/300/200" />
                             </a>
                         </div>
                         <div className={styles.description}>
@@ -41,7 +41,7 @@ const portfolioPage = () => {
                     <div className={styles.card}>
                         <div className={styles.image}>
                             <a href="https://projet5.emmaliefmann.com/index.php?action=allrecipes">
-                                <img src="https://picsum.photos/300/300" />
+                                <img src="https://picsum.photos/300/200" />
                             </a>
                         </div>
                         <div className={styles.description}>
@@ -53,7 +53,7 @@ const portfolioPage = () => {
                     <div className={styles.card}>
                         <div className={styles.image}>
                             <a href="https://projet5.emmaliefmann.com/index.php?action=allrecipes">
-                                <img src="https://picsum.photos/300/300" />
+                                <img src="https://picsum.photos/300/200" />
                             </a>
                         </div>
                         <div className={styles.description}>
@@ -62,8 +62,44 @@ const portfolioPage = () => {
                             <span className={styles.invisible}><p className="category">article</p></span>
                         </div>
                     </div>
-                    
-                    
+                </div> 
+                <div className={styles.row}>
+                    <div className={styles.card}>
+                        <div className={styles.image}>
+                            <a href="https://projet5.emmaliefmann.com/index.php?action=allrecipes">
+                                <img src="https://picsum.photos/300/200" />
+                            </a>
+                        </div>
+                        <div className={styles.description}>
+                            <h4>Food is delicious</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                            <span className={styles.invisible}><p className="category">article</p></span>
+                        </div>
+                    </div>
+                    <div className={styles.card}>
+                        <div className={styles.image}>
+                            <a href="https://projet5.emmaliefmann.com/index.php?action=allrecipes">
+                                <img src="https://picsum.photos/300/200" />
+                            </a>
+                        </div>
+                        <div className={styles.description}>
+                            <h4>Why is everything closed?</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                            <span className={styles.invisible}><p className="category">article</p></span>
+                        </div>
+                    </div>
+                    <div className={styles.card}>
+                        <div className={styles.image}>
+                            <a href="https://projet5.emmaliefmann.com/index.php?action=allrecipes">
+                                <img src="https://picsum.photos/300/200" />
+                            </a>
+                        </div>
+                        <div className={styles.description}>
+                            <h4>Wine certainly helps</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <span className={styles.invisible}><p className="category">article</p></span>
+                        </div>
+                    </div>
                 </div> 
             </div>
         </>

@@ -4,9 +4,9 @@ import styles from '../styles/Nav.module.scss'
 const Nav = () => {
     return (
         <nav className={styles.nav}>
-            <div className="logo">
+            <div className={styles.logo}>
                 <Link href='/'>
-                    <p>logo</p>
+                    <p>MB</p>
                 </Link>
             </div>
             <ul>

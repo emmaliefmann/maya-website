@@ -16,22 +16,26 @@ export default function Home() {
       </Head>
       <section className={styles.intro}>
         <div className={styles.collage}>
-          <img src="/img/plant.jpg" alt="test" className={styles.image1} />
-          <img src="/img/cafe-landscape.jpg" alt="test" className={styles.image2} />
+          
+          <img src="/img/collage.jpg" />
           <div>
             <h2>MAYA BLACK</h2>
             <p>Freelance writer in Manchester</p>
             <p>Communications specialist</p>
+            <p>Experienced journalist</p>
+            <p>Copywriter</p>
+            <p>Branded contents</p>
           </div>
         </div>
       </section>
       <section className={styles.about}>
-        <h3>About me</h3>
           <div className={styles.container}>
-            <div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu fringilla elit. Tincidunt ut metus non, sodales tempus mi. Mauris nisl nunc, porttitor id euismod sit amet, sodales nec odio. Mauris non mi bibendum, fermentum justo nec, mollis lacus. Aenean diam libero, vehicula nec urna eget, tincidunt elementum dui. Duis ultrices molestie tempus. Donec porttitor porta ornare. Etiam in enim ante. Duis a ultrices tortor. Proin pretium et felis et lobortis.
-                Sed aliquet tristique placerat.</p>
+            <div className={styles.text}>
+              <h3>Hello I'm a writer</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu fringilla elit. Tincidunt ut metus non, sodales tempus mi. Mauris nisl nunc, porttitor id euismod sit amet, sodales nec odio. Mauris non mi bibendum, fermentum justo nec, mollis lacus. Aenean diam libero, vehicula nec urna eget, tincidunt elementum dui. Duis ultrices molestie tempus.</p>
+                <div className={styles.btnContainer}>
                 <button>Work with me</button>
+                </div>
             </div>
             <img src="/img/headshot.jpg" />
           {/* <Image 
