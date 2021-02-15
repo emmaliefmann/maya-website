@@ -1,29 +1,67 @@
 @use "variables" as *;
-
 .footer {
   background: black;
+  color: white;
   width: 100%;
   padding: 10px;
-  @include flexboxCenter(row);
+  @include flexboxCenter(column);
+  p,
+  a {
+    color: white;
+    text-align: center;
+  }
+  .nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
   .container {
+    width: 100%;
     @include flexboxCenter(column);
-    width: 30%;
+    margin-top: 10px;
     .socials {
       padding: 10px;
-      width: 150px;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
+      width: 100%;
+      @include flexboxCenter(row);
       svg {
         color: white;
         width: 20px;
         margin: 0 5px;
       }
     }
+  }
+}
+
+@include tablet {
+  .footer {
+    @include flexboxCenter(row);
     p,
     a {
-      color: white;
       margin: 7px;
+    }
+    .nav {
+      width: 30%;
+      color: white;
+      justify-content: center;
+      a {
+        padding: 10px;
+      }
+    }
+    .container {
+      @include flexboxCenter(column);
+      width: 30%;
+      .socials {
+        padding: 10px;
+        width: 150px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        svg {
+          color: white;
+          width: 20px;
+          margin: 0 5px;
+        }
+      }
     }
   }
 }

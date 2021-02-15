@@ -1,28 +1,36 @@
 @use "variables" as *;
 
+.header {
+  @include flexboxCenter(column);
+  p {
+    width: 60%;
+  }
+}
 .container {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   padding-bottom: 70px;
   .categories {
-    min-width: 1000px;
     padding: 20px 40px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     button {
       margin: 0px 5px;
     }
   }
-  .row {
-    @include row(space-around);
+  .cardCtn {
+    @include flexboxCenter(row);
     width: 100%;
+    flex-wrap: wrap;
+    max-width: 1200px;
   }
   .card {
     @include card(300px);
+    margin: 10px;
     .description {
       min-height: 175px;
     }

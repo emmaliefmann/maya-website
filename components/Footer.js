@@ -1,4 +1,5 @@
 import styles from '../styles/Footer.module.scss';
+import Link from 'next/link'
 //icons
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faLinkedin, faInstagram} from "@fortawesome/free-brands-svg-icons";
@@ -7,10 +8,10 @@ import {faEnvelope} from "@fortawesome/free-solid-svg-icons"
 const Footer = () => {
     return(
         <footer className={styles.footer}>
-            <div className={styles.container}>
-                <p>Home</p>
-                <p>Articles</p>
-                <p>Contact</p>
+            <div className={styles.nav}>
+                <Link href="/">Home</Link>
+                <Link href="/portfolio">Portfolio</Link>
+                <Link href="/contact">Contact</Link>
             </div>
             <div className={styles.container}>
                 <div className={styles.socials}>

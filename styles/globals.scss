@@ -20,12 +20,16 @@ section {
 }
 h1,
 h2,
-h3,
+h3 {
+  font-family: $title-font;
+  font-size: 35px;
+  letter-spacing: 3px;
+}
 h4,
 h5,
 h6 {
   font-family: $title-font;
-  font-size: 25px;
+  font-size: 27px;
 }
 a {
   color: inherit;

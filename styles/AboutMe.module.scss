@@ -1,0 +1,40 @@
+@use "variables" as *;
+
+.about {
+  width: 100%;
+  @include flexboxCenter(column);
+  h3 {
+    font-size: 35px;
+    letter-spacing: 2px;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    width: 80vw;
+    min-height: 700px;
+    .btnContainer {
+      @include flexboxCenter(row);
+      button {
+        margin-top: 30px;
+      }
+    }
+    img {
+      width: 400px;
+      height: 600px;
+      position: absolute;
+      right: 70px;
+    }
+    .text {
+      width: 55%;
+      background-color: $tv-white;
+      z-index: 1;
+      position: absolute;
+      right: 320px;
+      bottom: 73px;
+      padding: 25px;
+      box-shadow: rgb(0 0 0 / 40%) 0px 12px 12px 0px;
+    }
+  }
+}

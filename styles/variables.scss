@@ -1,6 +1,23 @@
+//media queries
+@mixin phone {
+  @media (max-width: 414px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media (min-width: 1240px) {
+    @content;
+  }
+}
+
 //color palette
 $main-color: #948e88;
-$dark-color: #575b4F;
+$dark-color: #575b4f;
 $light-color: #889194;
 $tv-white: #f2f2f2;
 //fonts
@@ -18,12 +35,14 @@ $title-font: "Bodoni Moda", serif;
   justify-content: space-between;
   align-items: center;
 }
+//Row
 @mixin row($spacing) {
   display: flex;
   justify-content: $spacing;
   align-items: center;
   padding: 10px;
 }
+//card
 @mixin card($width) {
   @include flexboxCenter(column);
   width: $width;
@@ -38,6 +57,7 @@ $title-font: "Bodoni Moda", serif;
   .description {
     width: 100%;
     padding: 10px;
+    background-color: $tv-white;
     .invisible {
       display: none;
     }
