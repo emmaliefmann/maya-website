@@ -1,9 +1,10 @@
 @use "variables" as *;
 
 .header {
+  padding: 0px 15px;
   @include flexboxCenter(column);
   p {
-    width: 60%;
+    width: 100%;
   }
 }
 .container {
@@ -33,6 +34,15 @@
     margin: 10px;
     .description {
       min-height: 175px;
+    }
+  }
+}
+
+@include tablet {
+  .header {
+    padding: 20px;
+    p {
+      width: 60%;
     }
   }
 }

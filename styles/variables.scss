@@ -35,6 +35,11 @@ $title-font: "Bodoni Moda", serif;
   justify-content: space-between;
   align-items: center;
 }
+@mixin flexAround {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 //Row
 @mixin row($spacing) {
   display: flex;

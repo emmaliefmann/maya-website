@@ -1,0 +1,58 @@
+@use "variables" as *;
+
+.recommendations {
+  h2 {
+    font-size: 40px;
+    letter-spacing: 4px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .tile {
+    @include flexboxCenter(column);
+    padding: 20px 10px;
+    img {
+      border-radius: 50%;
+    }
+    div {
+      @include flexboxCenter(column);
+      padding: 20px;
+      align-items: flex-start;
+      p {
+        font-size: 17px;
+      }
+    }
+  }
+}
+
+@include tablet {
+  .recommendations {
+    h2 {
+      margin-bottom: none;
+      text-align: left;
+      margin-left: 15px;
+    }
+    //for alternating tiles
+    .container {
+      .tile:nth-child(odd) {
+        @include flexboxCenter(row-reverse);
+      }
+      .tile:nth-child(even) {
+        @include flexboxCenter(row);
+      }
+    }
+    .tile {
+      padding: 10px 20px;
+      img {
+        border-radius: 50%;
+      }
+      div {
+        @include flexboxCenter(column);
+        padding: 30px;
+        align-items: flex-start;
+        p {
+          font-size: 17px;
+        }
+      }
+    }
+  }
+}

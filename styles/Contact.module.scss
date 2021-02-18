@@ -1,57 +1,57 @@
 @use "variables" as *;
 
 .mediaCard {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  img {
-    width: 420px;
-    opacity: 0.9;
+  h2 {
+    display: none;
+  }
+  .backgroundImg {
+    display: none;
   }
   .rightContainer {
-    width: 60%;
-    padding: 20px;
-    background-color: $tv-white;
+    width: 100%;
     @include flexboxCenter(column);
     h1 {
-      font-size: 40px;
-      letter-spacing: 3px;
+      margin-bottom: 20px;
     }
-    .socials {
-      @include flexboxJust;
-      width: 50%;
-      svg {
-        width: 30px;
+    .headshot {
+      width: 200px;
+      box-shadow: -40px -16px $light-color;
+      margin-left: 20px;
+    }
+    .textCtn {
+      p {
+        margin: 10px 0px;
+        padding: 10px;
+      }
+      .socials {
+        width: 100%;
+        @include flexboxCenter(row);
+        svg {
+          width: 30px;
+          margin: 5px 10px;
+        }
       }
     }
   }
 }
-
-.divider {
-  width: 80%;
-  height: 1px;
-  border: 1px solid $dark-color;
-  margin: 60px 0px;
-}
-
-.recommendations {
-  h2 {
-    font-size: 40px;
-    letter-spacing: 4px;
-  }
-  .tile {
-    @include flexboxJust;
-    padding: 40px 20px;
-    img {
-      border-radius: 50%;
+@include tablet {
+  .mediaCard {
+    h1 {
+      display: none;
     }
-    div {
-      @include flexboxCenter(column);
-      padding: 30px;
-      align-items: flex-start;
-      p {
-        font-size: 17px;
+    h2 {
+      display: block;
+    }
+    .rightContainer {
+      @include flexAround;
+      flex-direction: row;
+      padding: 10px 20px;
+      .textCtn {
+        padding: 10px;
+        margin-left: 20px;
+        .socials {
+          justify-content: flex-start;
+        }
       }
     }
   }

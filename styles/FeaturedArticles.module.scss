@@ -8,13 +8,28 @@
     text-align: center;
   }
   .container {
-    @include row(center);
     padding: 30px 0px;
+    @include flexboxCenter(column);
     .card {
       @include card(300px);
       margin: 0px;
       background-color: white;
       margin: 10px;
+    }
+  }
+}
+@include tablet {
+  .featured {
+    .container {
+      @include flexboxCenter(row);
+      flex-wrap: wrap;
+    }
+  }
+}
+@include desktop {
+  .featured {
+    .container {
+      @include flexboxCenter(row);
     }
   }
 }
