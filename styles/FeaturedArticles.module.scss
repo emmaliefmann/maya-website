@@ -16,6 +16,9 @@
       background-color: white;
       margin: 10px;
     }
+    .card:nth-child(4) {
+      display: none;
+    }
   }
 }
 @include tablet {
@@ -23,6 +26,12 @@
     .container {
       @include flexboxCenter(row);
       flex-wrap: wrap;
+      .card {
+        @include card(43%);
+      }
+      .card:nth-child(4) {
+        display: block;
+      }
     }
   }
 }
@@ -30,6 +39,12 @@
   .featured {
     .container {
       @include flexboxCenter(row);
+      .card {
+        @include card(30%);
+      }
+      .card:nth-child(4) {
+        display: none;
+      }
     }
   }
 }

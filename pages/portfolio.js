@@ -29,7 +29,7 @@ const portfolioPage = () => {
                     <div className={styles.card}>
                         <div className={styles.image}>
                             <a href="https://projet5.emmaliefmann.com/index.php?action=allrecipes">
-                                <img src="https://picsum.photos/300/200?random=1" />
+                                <img src="https://picsum.photos/600/400?random=1" />
                             </a>
                         </div>
                         <div className={styles.description}>
@@ -41,7 +41,7 @@ const portfolioPage = () => {
                     <div className={styles.card}>
                         <div className={styles.image}>
                             <a href="https://projet5.emmaliefmann.com/index.php?action=allrecipes">
-                                <img src="https://picsum.photos/300/200?random=2" />
+                                <img src="https://picsum.photos/600/400?random=2" />
                             </a>
                         </div>
                         <div className={styles.description}>
@@ -53,7 +53,7 @@ const portfolioPage = () => {
                     <div className={styles.card}>
                         <div className={styles.image}>
                             <a href="https://projet5.emmaliefmann.com/index.php?action=allrecipes">
-                                <img src="https://picsum.photos/300/200?random=3" />
+                                <img src="https://picsum.photos/600/400?random=3" />
                             </a>
                         </div>
                         <div className={styles.description}>
@@ -66,7 +66,7 @@ const portfolioPage = () => {
                     <div className={styles.card}>
                         <div className={styles.image}>
                             <a href="https://projet5.emmaliefmann.com/index.php?action=allrecipes">
-                                <img src="https://picsum.photos/300/200?random=4" />
+                                <img src="https://picsum.photos/600/400?random=4" />
                             </a>
                         </div>
                         <div className={styles.description}>
@@ -78,7 +78,7 @@ const portfolioPage = () => {
                     <div className={styles.card}>
                         <div className={styles.image}>
                             <a href="https://projet5.emmaliefmann.com/index.php?action=allrecipes">
-                                <img src="https://picsum.photos/300/200?random=5" />
+                                <img src="https://picsum.photos/600/400?random=5" />
                             </a>
                         </div>
                         <div className={styles.description}>
@@ -87,7 +87,18 @@ const portfolioPage = () => {
                             <span className={styles.invisible}><p className="category">article</p></span>
                         </div>
                     </div>
-                    
+                    <div className={styles.card}>
+                        <div className={styles.image}>
+                            <a href="https://projet5.emmaliefmann.com/index.php?action=allrecipes">
+                                <img src="https://picsum.photos/600/400?random=6" />
+                            </a>
+                        </div>
+                        <div className={styles.description}>
+                            <h4>Why is everything closed?</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                            <span className={styles.invisible}><p className="category">article</p></span>
+                        </div>
+                    </div>
                 </div> 
             </div>
         </>

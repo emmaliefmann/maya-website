@@ -13,6 +13,7 @@ export default function Recommendations() {
                         <p><em>- A Media Company</em></p>
                     </div>
                 </div>
+                
                 <div className={styles.tile}>
                     <img src="https://picsum.photos/150/150?random=11" alt="" />
                     <div>
@@ -20,8 +21,8 @@ export default function Recommendations() {
                             bake bread and has a sweet sense of style. I would recommend her to anyone.</p><br/>
                         <p><em>- A Media Company</em></p>
                     </div>
-                    
                 </div>
+                
                 <div className={styles.tile}>
                     <img src="https://picsum.photos/150/150?random=12" alt="" />
                     <div>

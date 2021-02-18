@@ -28,10 +28,9 @@ const contactPage = () => {
                             <FontAwesomeIcon icon={faPhone} size="4x" /> 
                         </div>
                     </div>
-                    
                 </div>
             </section>
-            <span className={styles.divider}></span>
+            <hr/>
             <Recommendations/>
         </>
     )

@@ -1,8 +1,5 @@
 @use "variables" as *;
 @include phone {
-  .container {
-    background-color: pink;
-  }
   .main {
     display: flex;
     flex-direction: column;

@@ -55,9 +55,13 @@ $title-font: "Bodoni Moda", serif;
   box-shadow: rgb(0 0 0 / 40%) 0px 12px 12px 0px;
   .image {
     width: 100%;
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
+    img {
+      max-width: 100%;
+    }
   }
   .description {
     width: 100%;

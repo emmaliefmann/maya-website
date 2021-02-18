@@ -56,3 +56,64 @@
     }
   }
 }
+@include desktop {
+  .mediaCard {
+    display: flex;
+    max-width: 1200px;
+    position: relative;
+    .backgroundImg {
+      display: block;
+      width: 440px;
+    }
+    .rightContainer {
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-end;
+      h1 {
+        display: block;
+        width: 100%;
+        font-size: 60px;
+        text-align: left;
+        letter-spacing: 4px;
+        margin-top: 20px;
+        margin-left: 10px;
+      }
+      .headshot {
+        box-shadow: none;
+        border: 5px solid white;
+        position: absolute;
+        width: 370px;
+        left: 277px;
+        bottom: 0px;
+        margin-bottom: 60px;
+      }
+      //Headshot and text ctn need to have same height and bottom border
+      .textCtn {
+        @include flexboxCenter(column);
+        width: 70%;
+        height: 370px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 60px;
+        h2 {
+          display: none;
+        }
+        p {
+          font-size: 25px;
+          margin: 0px;
+        }
+        .socials {
+          width: 100%;
+          justify-content: center;
+          margin-top: 20px;
+          svg {
+            width: 50px;
+            margin: 5px 15px;
+          }
+        }
+      }
+    }
+  }
+}

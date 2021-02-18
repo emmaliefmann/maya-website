@@ -7,18 +7,24 @@
     text-align: center;
     margin-bottom: 20px;
   }
-  .tile {
-    @include flexboxCenter(column);
-    padding: 20px 10px;
-    img {
-      border-radius: 50%;
-    }
-    div {
+  hr {
+    width: 80%;
+    margin: auto;
+  }
+  .container {
+    .tile {
       @include flexboxCenter(column);
-      padding: 20px;
-      align-items: flex-start;
-      p {
-        font-size: 17px;
+      padding: 20px 10px;
+      img {
+        border-radius: 50%;
+      }
+      div {
+        @include flexboxCenter(column);
+        padding: 20px;
+        align-items: flex-start;
+        p {
+          font-size: 17px;
+        }
       }
     }
   }
@@ -33,24 +39,39 @@
     }
     //for alternating tiles
     .container {
-      .tile:nth-child(odd) {
+      div.tile:nth-child(odd) {
         @include flexboxCenter(row-reverse);
       }
-      .tile:nth-child(even) {
+      div.tile:nth-child(even) {
         @include flexboxCenter(row);
       }
-    }
-    .tile {
-      padding: 10px 20px;
-      img {
-        border-radius: 50%;
+      .tile {
+        padding: 10px 30px;
+        margin: 30px 0px;
+        div {
+          @include flexboxCenter(column);
+          padding: 30px;
+          align-items: flex-start;
+          p {
+            font-size: 17px;
+          }
+        }
       }
-      div {
-        @include flexboxCenter(column);
-        padding: 30px;
-        align-items: flex-start;
-        p {
-          font-size: 17px;
+    }
+  }
+}
+@include desktop {
+  .recommendations {
+    h2 {
+      font-size: 60px;
+    }
+    .container {
+      .tile {
+        div {
+          max-width: 800px;
+          p {
+            font-size: 22px;
+          }
         }
       }
     }
