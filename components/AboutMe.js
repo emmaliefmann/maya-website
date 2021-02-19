@@ -4,6 +4,8 @@ export default function AboutMe() {
     return (
         <section className={styles.about}>
           <div className={styles.container}>
+            <img src="/img/headshot.jpg" alt="" className={styles.headshot} />
+            <img src="img/backgroundleaves.jpg" alt="" className={styles.background} />
             <div className={styles.text}>
               <h3>Hello I'm a writer</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu fringilla elit. 
@@ -13,15 +15,6 @@ export default function AboutMe() {
                 <button>Work with me</button>
                 </div>
             </div>
-            <img src="/img/headshot.jpg" />
-          {/* <Image 
-          src="/img/headshot.jpg"
-          alt="Picture of writer"
-          width={400}
-          height={600}
-          layout="fixed"
-          
-          /> */}
         </div>
       </section>
     )
