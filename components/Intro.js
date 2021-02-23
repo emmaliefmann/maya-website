@@ -14,15 +14,8 @@ export default function Intro() {
         </div>
         <div className={styles.textCtn}>
             <h2>MAYA BLACK</h2>
-            <p>Freelance writer in Manchester</p>
-            <hr></hr>
-            <p>Communications specialist</p>
-            <hr></hr>
-            <p>Experienced journalist</p>
-            <hr></hr>
-            <p>Copywriter</p>
-            <hr></hr>
-            <p>Branded content</p>
+            <p>Freelance writer based in Manchester.</p>
+            <p>Specialisting in food writing branded content and creative blog content.</p>
           </div>
       </section>
     )

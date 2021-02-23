@@ -12,7 +12,7 @@ const contactPage = () => {
     return (
         <>
             <section className={styles.mediaCard}>
-                <img src="/img/cafe.jpg" alt="" className={styles.backgroundImg} />
+                <img src="/img/manchester.jpg" alt="" className={styles.backgroundImg} />
                 <div className={styles.rightContainer}>
                     <h1>Work with me</h1>
                     <img src="/img/headshot-square.jpg" alt="" className={styles.headshot} />

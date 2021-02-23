@@ -41,6 +41,7 @@
     }
     h2 {
       display: block;
+      font-size: 40px;
     }
     .rightContainer {
       @include flexAround;
@@ -49,6 +50,7 @@
       .textCtn {
         padding: 10px;
         margin-left: 20px;
+        font-size: 16px;
         .socials {
           justify-content: flex-start;
         }
@@ -72,8 +74,8 @@
       h1 {
         display: block;
         width: 100%;
-        font-size: 60px;
-        text-align: left;
+        font-size: 45px;
+        text-align: center;
         letter-spacing: 4px;
         margin-top: 20px;
         margin-left: 10px;
@@ -101,7 +103,7 @@
           display: none;
         }
         p {
-          font-size: 25px;
+          font-size: 18px;
           margin: 0px;
         }
         .socials {

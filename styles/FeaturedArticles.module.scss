@@ -23,6 +23,9 @@
 }
 @include tablet {
   .featured {
+    h3 {
+      font-size: 40px;
+    }
     .container {
       @include flexboxCenter(row);
       flex-wrap: wrap;
@@ -37,6 +40,9 @@
 }
 @include desktop {
   .featured {
+    h3 {
+      font-size: 45px;
+    }
     .container {
       @include flexboxCenter(row);
       .card {

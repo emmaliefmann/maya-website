@@ -1,6 +1,9 @@
 import Link from 'next/link'
 import styles from '../styles/Nav.module.scss'
 
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faBars} from "@fortawesome/free-solid-svg-icons";
+
 const Nav = () => {
     return (
         <nav className={styles.nav}>
@@ -9,6 +12,10 @@ const Nav = () => {
                     <p>MB</p>
                 </Link>
             </div>
+            <button className={styles.toggle}>
+                <FontAwesomeIcon icon={faBars} />
+            </button>
+            <div className={styles.navlinks}>
             <ul>
                 <li>
                     <Link href='/'>Home</Link>
@@ -20,6 +27,8 @@ const Nav = () => {
                     <Link href='/contact'>Contact</Link>
                 </li>
             </ul>
+            </div>
+            
         </nav>
     )
 }
