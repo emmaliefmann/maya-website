@@ -5,22 +5,27 @@
   margin-top: 0px;
   @include flexboxCenter(column);
   .collage {
-    min-height: 350px;
+    min-height: 430px;
     width: 100vw;
     position: relative;
     max-width: 472px;
     img {
-      border: 6px solid white;
+      border: 2px solid white;
     }
     img:nth-child(1) {
-      display: none;
+      min-width: 300px;
+      width: 80%;
+      max-width: 360px;
+      opacity: 0.75;
+      position: absolute;
+      transform: translateX(-50%);
+      left: 50%;
     }
     img:nth-child(2) {
-      width: 80%;
-      max-width: 250px;
+      width: 60%;
       opacity: 0.8;
       position: absolute;
-      top: 29%;
+      bottom: 2%;
       left: 0%;
     }
     img:nth-child(3) {
@@ -31,18 +36,6 @@
       top: 0%;
       //transform: translateY(-50%);
     }
-    img:nth-child(4) {
-      width: 45%;
-      min-width: 170px;
-      max-width: 260px;
-      position: absolute;
-      bottom: 0%;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-    img:nth-child(5) {
-      display: none;
-    }
   }
   .textCtn {
     font-size: 23px;
@@ -50,8 +43,8 @@
     margin-top: 10px;
     hr {
       padding: 0px;
-      border: 1px solid black;
-      width: 80%;
+      border: 1px solid #97877c;
+      width: 100%;
     }
     h2 {
       font-size: 40px;
@@ -60,6 +53,7 @@
     p {
       letter-spacing: 1px;
       margin: 30px 0px;
+      color: #444444;
     }
   }
 }
@@ -68,25 +62,21 @@
   .intro {
     margin-top: 10px;
     .collage {
-      min-height: 780px;
+      min-height: 815px;
       max-width: 837px;
+      img:nth-child(1) {
+        max-width: 620px;
+      }
       img:nth-child(2) {
-        max-width: 580px;
-        top: 26%;
         left: 0%;
+        bottom: 3%;
       }
       img:nth-child(3) {
-        width: 60%;
-        max-width: 430px;
-        right: 0%;
-        top: 0%;
-        //transform: translateY(-50%);
-      }
-      img:nth-child(4) {
-        width: 50%;
+        width: 47%;
         max-width: 400px;
-        bottom: 0%;
-        left: 50%;
+        right: 0%;
+        top: 55%;
+        transform: translateY(-55%);
       }
     }
     .textCtn {
@@ -106,48 +96,35 @@
     max-width: 1300px;
     margin: auto;
     .collage {
-      min-height: 960px;
+      min-height: 975px;
       max-width: 1300px;
       position: relative;
       img:nth-child(1) {
-        display: block;
-        min-width: 370px;
-        max-width: 461px;
-        left: 35%;
-        transform: translateX(35%);
-        opacity: 0.75;
+        width: 56%;
+        max-width: 800px;
+        left: 0%;
+        transform: translateY(0%);
       }
       img:nth-child(2) {
         max-width: 580px;
-        top: 33%;
-        left: 0%;
+        top: 5%;
+        left: 85%;
+        transform: translateX(-85%);
       }
       img:nth-child(3) {
         width: 60%;
         max-width: 430px;
         left: 29%;
         transform: translateX(-40%);
-        top: 39%;
+        top: 50%;
         transform: translateY(-28%);
-      }
-      img:nth-child(4) {
-        max-width: 350px;
-        top: 51%;
-        left: 38%;
-      }
-      img:nth-child(5) {
-        display: block;
-        width: 520px;
-        position: absolute;
-        top: 0%;
-        right: 0%;
       }
     }
     .textCtn {
       font-size: 27px;
       position: absolute;
       right: 0%;
-      bottom: 7%;
+      bottom: 16%;
       p {
         letter-spacing: 3px;
       }
