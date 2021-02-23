@@ -23,7 +23,7 @@ export default function FeaturedArticles() {
             </a>
           </div>
           <div className={styles.description}>
-            <h4>Article Title</h4>
+            <h4>Time to eat</h4>
           </div>
         </div>
         <div className={styles.card}>
@@ -33,7 +33,7 @@ export default function FeaturedArticles() {
             </a>
           </div>
           <div className={styles.description}>
-            <h4>Article Title</h4>
+            <h4>Manchester</h4>
           </div>
         </div>
         <div className={styles.card}>
