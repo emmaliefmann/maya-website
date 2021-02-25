@@ -1,11 +1,26 @@
 import React from 'react';
 import styles from '../styles/Portfolio.module.scss'
 
-const filterHandler = (category) => {
-    console.log(category);
-}; 
+import { motion } from "framer-motion";
 
 const portfolioPage = () => {
+    const container = {
+        hidden: { opacity: 0.7 },
+        show: {
+            opacity: 1,
+            scale:1,
+            transition: {
+            delayChildren: 0.3,
+            staggerChildren: 0.5,
+            }
+        }
+    }
+    const item = {
+        hidden: {opacity: 0},
+        show: {
+            opacity: 1,
+        }
+    }
     return (
         <>
             <header className={styles.header}>
@@ -25,8 +40,11 @@ const portfolioPage = () => {
                         BRANDED CONTENT
                     </button>
                 </div>
-                <div className={styles.cardCtn}>
-                    <div className={styles.card}>
+
+                <motion.div className={styles.cardCtn}
+                variants={container} initial="hidden" animate="show">
+                    <motion.div className={styles.card} 
+                    variants={item} initial="hidden" animate="show">
                         <div className={styles.image}>
                             <a href="https://projet5.emmaliefmann.com/index.php?action=allrecipes">
                                 <img src="https://picsum.photos/600/400?random=1" />
@@ -34,11 +52,12 @@ const portfolioPage = () => {
                         </div>
                         <div className={styles.description}>
                             <h4>Food is delicious</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                            <span className={styles.invisible}><p className="category">article</p></span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            
                         </div>
-                    </div>
-                    <div className={styles.card}>
+                    </motion.div>
+                    <motion.div className={styles.card} 
+                    variants={item} initial="hidden" animate="show">
                         <div className={styles.image}>
                             <a href="https://projet5.emmaliefmann.com/index.php?action=allrecipes">
                                 <img src="https://picsum.photos/600/400?random=2" />
@@ -46,11 +65,11 @@ const portfolioPage = () => {
                         </div>
                         <div className={styles.description}>
                             <h4>Why is everything closed?</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                            <span className={styles.invisible}><p className="category">article</p></span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>
-                    </div>
-                    <div className={styles.card}>
+                    </motion.div>
+                    <motion.div className={styles.card} 
+                    variants={item} initial="hidden" animate="show">
                         <div className={styles.image}>
                             <a href="https://projet5.emmaliefmann.com/index.php?action=allrecipes">
                                 <img src="https://picsum.photos/600/400?random=3" />
@@ -59,11 +78,9 @@ const portfolioPage = () => {
                         <div className={styles.description}>
                             <h4>Wine certainly helps</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            <span className={styles.invisible}><p className="category">article</p></span>
                         </div>
-                    </div>
-                
-                    <div className={styles.card}>
+                    </motion.div>
+                    <motion.div className={styles.card} variants={item}>
                         <div className={styles.image}>
                             <a href="https://projet5.emmaliefmann.com/index.php?action=allrecipes">
                                 <img src="https://picsum.photos/600/400?random=4" />
@@ -71,11 +88,10 @@ const portfolioPage = () => {
                         </div>
                         <div className={styles.description}>
                             <h4>Bagels for days</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                            <span className={styles.invisible}><p className="category">article</p></span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>
-                    </div>
-                    <div className={styles.card}>
+                    </motion.div>
+                    <motion.div className={styles.card} variants={item}>
                         <div className={styles.image}>
                             <a href="https://projet5.emmaliefmann.com/index.php?action=allrecipes">
                                 <img src="https://picsum.photos/600/400?random=5" />
@@ -83,11 +99,9 @@ const portfolioPage = () => {
                         </div>
                         <div className={styles.description}>
                             <h4>Why is everything closed?</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                            <span className={styles.invisible}><p className="category">article</p></span>
-                        </div>
-                    </div>
-                    <div className={styles.card}>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>                        </div>
+                    </motion.div>
+                    <motion.div className={styles.card} variants={item}>
                         <div className={styles.image}>
                             <a href="https://projet5.emmaliefmann.com/index.php?action=allrecipes">
                                 <img src="https://picsum.photos/600/400?random=6" />
@@ -95,11 +109,10 @@ const portfolioPage = () => {
                         </div>
                         <div className={styles.description}>
                             <h4>Why is everything closed?</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                            <span className={styles.invisible}><p className="category">article</p></span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>
-                    </div>
-                </div> 
+                    </motion.div>
+                </motion.div> 
             </div>
         </>
     )

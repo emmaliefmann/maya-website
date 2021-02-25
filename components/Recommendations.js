@@ -1,8 +1,22 @@
 import styles from '../styles/Recommendations.module.scss'
 
+import { motion } from "framer-motion";
+import { useScroll } from './../components/useScroll';
+
 export default function Recommendations() {
+    const [element, controls] = useScroll();
+
+    const appear = {
+        hidden: { opacity: 0, y:100},
+        show: {
+          opacity: 1,
+          y:0,
+          transition: { ease: "easeOut", duration: 1, delay:0.5 },
+        },
+      };
     return (
-        <section className={styles.recommendations}>
+        <motion.section className={styles.recommendations}
+        variants={appear} ref={element} initial="hidden" animate={controls}>
             <h2>What my clients say</h2>
             <div className={styles.container}>
                 <div className={styles.tile}>
@@ -32,6 +46,6 @@ export default function Recommendations() {
                     </div>
                 </div>
             </div>
-        </section>
+        </motion.section>
     )
 }

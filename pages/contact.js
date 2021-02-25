@@ -1,7 +1,8 @@
 
 import styles from '../styles/Contact.module.scss'
-import Image from 'next/image'
 
+
+import { motion } from "framer-motion";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faLinkedin, faInstagram} from "@fortawesome/free-brands-svg-icons";
 import {faEnvelope, faPhone} from "@fortawesome/free-solid-svg-icons"
@@ -9,9 +10,18 @@ import Recommendations from './../components/Recommendations';
 
 
 const contactPage = () => {
+    const appear = {
+        hidden: { opacity: 0.8, x:100},
+        show: {
+          opacity: 1,
+          x:0,
+          transition: { ease: "easeOut", duration: 1 },
+        },
+      };
     return (
         <>
-            <section className={styles.mediaCard}>
+            <motion.section className={styles.mediaCard} 
+            variants={appear} animate="show" initial="hidden">
                 <img src="/img/manchester.jpg" alt="" className={styles.backgroundImg} />
                 <div className={styles.rightContainer}>
                     <h1>Work with me</h1>
@@ -29,7 +39,7 @@ const contactPage = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </motion.section>
             <hr/>
             <Recommendations/>
         </>
