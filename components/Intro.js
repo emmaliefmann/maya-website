@@ -32,9 +32,9 @@ export default function Intro() {
         <section className={styles.intro}>
         <div className={styles.collage} 
         variants={appear} ref={element} animate={controls} initial="hidden">
-          <motion.img variants={slideDown} src="/img/arches.jpg" alt="" />
-          <motion.img variants={slideUp} initial="hidden" animate="show" src="/img/plates.jpg" alt="" />
-          <motion.img variants={slideLeft} initial="hidden" animate="show" src="/img/headshot-square.jpg" alt="" />
+          <motion.img variants={slideDown} src="/img/arches.jpg" alt="Manchester Central library" />
+          <motion.img variants={slideUp} initial="hidden" animate="show" src="/img/plates.jpg" alt="dinner plates and a glass of wine" />
+          <motion.img variants={slideLeft} initial="hidden" animate="show" src="/img/headshot-square.jpg" alt="Portrait of Maya Black" />
         </div>
         <div className={styles.textCtn}>
             <h2>MAYA BLACK</h2>

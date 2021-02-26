@@ -25,7 +25,7 @@ const contactPage = () => {
                 <img src="/img/manchester.jpg" alt="" className={styles.backgroundImg} />
                 <div className={styles.rightContainer}>
                     <h1>Work with me</h1>
-                    <img src="/img/headshot-square.jpg" alt="" className={styles.headshot} />
+                    <img src="/img/headshot-square2.jpg" alt="" className={styles.headshot} />
                     <div className={styles.textCtn}>
                         <h2>Work with me</h2>
                         <p>
