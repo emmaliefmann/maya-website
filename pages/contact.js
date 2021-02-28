@@ -11,10 +11,10 @@ import Recommendations from './../components/Recommendations';
 
 const contactPage = () => {
     const appear = {
-        hidden: { opacity: 0.8, x:100},
+        hidden: { opacity: 0, scale:0.8 },
         show: {
           opacity: 1,
-          x:0,
+          scale:1,
           transition: { ease: "easeOut", duration: 1 },
         },
       };
@@ -22,10 +22,13 @@ const contactPage = () => {
         <>
             <motion.section className={styles.mediaCard} 
             variants={appear} animate="show" initial="hidden">
-                <img src="/img/manchester.jpg" alt="" className={styles.backgroundImg} />
+                <div className={styles.collage}>
+                    <img src="/img/manchester.jpg" alt="" className={styles.backgroundImg} />
+                    <img src="/img/headshot-square.jpg" alt="Maya Black freelance writer, Manchester" className={styles.headshotMobile} />
+                </div>
                 <div className={styles.rightContainer}>
                     <h1>Work with me</h1>
-                    <img src="/img/headshot-square2.jpg" alt="" className={styles.headshot} />
+                    <img src="/img/headshot-square.jpg" alt="Maya Black freelance writer, Manchester" className={styles.headshot} />
                     <div className={styles.textCtn}>
                         <h2>Work with me</h2>
                         <p>

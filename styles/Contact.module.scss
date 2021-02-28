@@ -1,12 +1,31 @@
 @use "variables" as *;
 
 .mediaCard {
-  min-height: 40vh;
+  min-height: 650px;
+  @include flexboxCenter(column);
+
   h2 {
     display: none;
   }
-  .backgroundImg {
-    display: none;
+  .collage {
+    position: relative;
+    max-width: 460px;
+    min-width: 320px;
+    width: 100%;
+    .backgroundImg {
+      min-width: 240px;
+      max-width: 260px;
+      width: 70%;
+    }
+    .headshotMobile {
+      max-width: 235px;
+      min-width: 200px;
+      width: 60%;
+      position: absolute;
+      right: 0;
+      top: 30%;
+      transform: translateY(-30%);
+    }
   }
   .rightContainer {
     width: 100%;
@@ -15,9 +34,7 @@
       margin-bottom: 20px;
     }
     .headshot {
-      width: 200px;
-      box-shadow: -40px -16px $light-color;
-      margin-left: 20px;
+      display: none;
     }
     .textCtn {
       p {
@@ -37,6 +54,7 @@
 }
 @include tablet {
   .mediaCard {
+    min-height: 260px;
     h1 {
       display: none;
     }
@@ -44,10 +62,25 @@
       display: block;
       font-size: 40px;
     }
+    .collage {
+      .backgroundImg {
+        display: none;
+      }
+      .headshotMobile {
+        display: none;
+      }
+    }
     .rightContainer {
       @include flexAround;
       flex-direction: row;
       padding: 10px 20px;
+      .headshot {
+        display: block;
+        min-width: 200px;
+        width: 40%;
+        box-shadow: -40px -16px $light-color;
+        margin-left: 20px;
+      }
       .textCtn {
         padding: 10px;
         margin-left: 20px;
@@ -62,11 +95,16 @@
 @include desktop {
   .mediaCard {
     display: flex;
+    flex-direction: row;
     max-width: 1200px;
     position: relative;
-    .backgroundImg {
-      display: block;
-      width: 440px;
+    .collage {
+      min-height: 600px;
+      .backgroundImg {
+        display: block;
+        width: 100%;
+        max-width: 530px;
+      }
     }
     .rightContainer {
       flex-direction: column;
@@ -87,7 +125,7 @@
         position: absolute;
         width: 370px;
         left: 277px;
-        bottom: 0px;
+        bottom: 62px;
         margin-bottom: 60px;
       }
       //Headshot and text ctn need to have same height and bottom border

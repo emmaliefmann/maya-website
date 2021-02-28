@@ -5,13 +5,14 @@ import { motion } from "framer-motion";
 
 const portfolioPage = () => {
     const container = {
-        hidden: { opacity: 0.7 },
+        hidden: { opacity: 0.5, scale: 0.8 },
         show: {
             opacity: 1,
             scale:1,
             transition: {
-            delayChildren: 0.3,
-            staggerChildren: 0.5,
+                ease: "easeOut", 
+                duration: 1, 
+            delayChildred: 0.5
             }
         }
     }
@@ -80,7 +81,8 @@ const portfolioPage = () => {
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>
                     </motion.div>
-                    <motion.div className={styles.card} variants={item}>
+                    <motion.div className={styles.card} variants={item}
+                    variants={item} initial="hidden" animate="show">
                         <div className={styles.image}>
                             <a href="https://projet5.emmaliefmann.com/index.php?action=allrecipes">
                                 <img src="https://picsum.photos/600/400?random=4" />

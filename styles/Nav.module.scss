@@ -49,6 +49,9 @@
       font-size: 20px;
       letter-spacing: 2px;
       padding: 15px;
+      .navLine {
+        display: none;
+      }
     }
   }
   .logo {
@@ -83,6 +86,13 @@
         font-family: $title-font;
         font-size: 16px;
         letter-spacing: 2px;
+        .navLine {
+          display: block;
+          width: 0%;
+          height: 2px;
+          background-color: white;
+          border-top: 2px;
+        }
       }
       li:nth-child(2) {
         border-left: 2px solid $tv-white;

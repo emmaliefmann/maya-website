@@ -11,7 +11,7 @@ export default function Recommendations() {
         show: {
           opacity: 1,
           y:0,
-          transition: { ease: "easeOut", duration: 1, delay:0.5 },
+          transition: { ease: "easeOut", duration: 1},
         },
       };
     return (

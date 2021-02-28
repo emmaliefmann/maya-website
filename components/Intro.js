@@ -34,7 +34,7 @@ export default function Intro() {
         variants={appear} ref={element} animate={controls} initial="hidden">
           <motion.img variants={slideDown} src="/img/arches.jpg" alt="Manchester Central library" />
           <motion.img variants={slideUp} initial="hidden" animate="show" src="/img/plates.jpg" alt="dinner plates and a glass of wine" />
-          <motion.img variants={slideLeft} initial="hidden" animate="show" src="/img/headshot-square.jpg" alt="Portrait of Maya Black" />
+          <motion.img variants={slideLeft} initial="hidden" animate="show" src="/img/headshot-square2.jpg" alt="Headshot of Maya Black, freelance writer in Manchester" />
         </div>
         <div className={styles.textCtn}>
             <h2>MAYA BLACK</h2>
