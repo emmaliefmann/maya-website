@@ -18,17 +18,27 @@ const contactPage = () => {
           transition: { ease: "easeOut", duration: 1 },
         },
       };
+      const slideDown = {
+        hidden: {opacity: 0, scale:0.8},
+        show: {opacity:1, scale:1, transition: {duration:2}, delay:1},
+      }
+      const slideUp = {
+        hidden: {opacity: 0, scale:0.8},
+        show: {opacity:1, scale:1, transition: {duration:1}},
+      }
     return (
         <>
-            <motion.section className={styles.mediaCard} 
-            variants={appear} animate="show" initial="hidden">
-                <div className={styles.collage}>
-                    <img src="/img/manchester.jpg" alt="" className={styles.backgroundImg} />
-                    <img src="/img/headshot-square.jpg" alt="Maya Black freelance writer, Manchester" className={styles.headshotMobile} />
+            <section className={styles.mediaCard}>
+                <div className={styles.collage} variants={appear} >
+                    <motion.img variants={slideUp} animate="show" initial="hidden" src="/img/manchester.jpg" alt="" className={styles.backgroundImg} />
+                    <img 
+                    src="/img/headshot-square.jpg" 
+                    alt="Maya Black freelance writer, Manchester" 
+                    className={styles.headshotMobile} />
                 </div>
                 <div className={styles.rightContainer}>
                     <h1>Work with me</h1>
-                    <img src="/img/headshot-square.jpg" alt="Maya Black freelance writer, Manchester" className={styles.headshot} />
+                    <motion.img variants={slideDown} animate="show" initial="hidden" src="/img/headshot-square.jpg" alt="Maya Black freelance writer, Manchester" className={styles.headshot} />
                     <div className={styles.textCtn}>
                         <h2>Work with me</h2>
                         <p>
@@ -42,7 +52,7 @@ const contactPage = () => {
                         </div>
                     </div>
                 </div>
-            </motion.section>
+            </section>
             <hr/>
             <Recommendations/>
         </>
