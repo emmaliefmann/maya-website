@@ -23,10 +23,9 @@ export default function AboutMe() {
             <img src="/img/headshot.jpg" alt="" className={styles.headshot} />
             <img src="img/backgroundleaves.jpg" alt="" className={styles.background} />
             <div className={styles.text}>
-              <h3>Hello I'm a writer</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu fringilla elit. 
-                Tincidunt ut metus non, sodales tempus mi. Mauris nisl nunc, porttitor id euismod sit amet, sodales nec odio. Mauris non mi bibendum, fermentum justo nec, mollis lacus. 
-                Aenean diam libero, vehicula nec urna eget, tincidunt elementum dui. Duis ultrices molestie tempus.</p>
+              <h3>Hello, I'm Maya</h3>
+              <p>An experienced freelance writer who has worked with clients to create content for a wide range of 
+                platforms and purposes, including news, feature articles, copywriting, branded content campaigns and blogs. My work has been featured in publications including The Culture Trip, LADbible, UNILAD, Manchester Evening News and EATMCR, as well as blogs on individual client websites. If you'd like to discuss an upcoming article or project, feel free to get in touch.</p>
                 <div className={styles.btnContainer}>
                 <button>Work with me</button>
                 </div>

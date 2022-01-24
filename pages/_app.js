@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }) {
       <Head>
           <title>Maya Black</title>
           <meta name="keywords" content="" />
-          <link rel="icon" href="/favicon.ico" />
+          <link rel="icon" href="/favicon.png" />
           <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@500&display=swap" rel="stylesheet"/>
           <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"/>
         </Head>

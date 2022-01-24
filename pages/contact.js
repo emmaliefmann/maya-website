@@ -42,7 +42,7 @@ const contactPage = () => {
                     <div className={styles.textCtn}>
                         <h2>Work with me</h2>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            I can work with you to deliver high quality written content, whatever your aims. If you want to discuss working on a project, please get in touch.
                         </p>
                         <div className={styles.socials}>
                             <FontAwesomeIcon icon={faEnvelope} size="2x"/> 

@@ -41,7 +41,7 @@ export default function Intro() {
             <br/>
             <hr/>
             <p>Freelance writer based in Manchester.</p>
-            <p>Specialisting in food writing branded content and creative blog content.</p>
+            <p>Specialising in food writing, branded content and creative blogs.</p>
           </div>
       </section>
     )

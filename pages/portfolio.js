@@ -22,11 +22,15 @@ const portfolioPage = () => {
             opacity: 1,
         }
     }
+
+    const filterHandler = (category) => {
+        console.log(category);
+    }
     return (
         <>
             <header className={styles.header}>
                 <h1>Portfolio</h1>
-                <p>Proin vestibulum augue vel quam mattis, a posuere sapien pellentesque. Aliquam metus turpis, consectetur ac commodo a, mattis nec eros. Fusce congue dignissim diam ac ornare. Duis at dolor quis diam sodales blandit. Aenean euismod convallis dictum. Nulla facilisi. Donec ut lacus ut augue rutrum porta at et nulla.</p>
+                <p>Here is a selection of some of my articles including food writing, features, branded content and blogs. Filter the type of content using the keywords below.</p>
             </header>
             <div className={styles.container}>
                 {/* pull categories from DB */}
@@ -47,38 +51,37 @@ const portfolioPage = () => {
                     <motion.div className={styles.card} 
                     variants={item} initial="hidden" animate="show">
                         <div className={styles.image}>
-                            <a href="https://projet5.emmaliefmann.com/index.php?action=allrecipes">
-                                <img src="https://picsum.photos/600/400?random=1" />
+                            <a href="https://www.eatmcr.co.uk/culture/new-lockdown-baking-business-manchester/" target="_blank">
+                                <img src="/img/portfolio/homebakers.jpeg" />
                             </a>
                         </div>
                         <div className={styles.description}>
-                            <h4>Food is delicious</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            
+                            <h4>The Rise of the Home Bakers</h4>
+                            <p>The people who turned baking from a hobby into a profession during lockdown</p>
                         </div>
                     </motion.div>
                     <motion.div className={styles.card} 
                     variants={item} initial="hidden" animate="show">
                         <div className={styles.image}>
-                            <a href="https://projet5.emmaliefmann.com/index.php?action=allrecipes">
-                                <img src="https://picsum.photos/600/400?random=2" />
+                            <a href="https://www.eatmcr.co.uk/culture/celebrate-hannukah-festival-manchester-food/" target="_blank">
+                                <img src="/img/portfolio/chanukkah.jpg" alt="Sugared donuts on a glass plate with a pair of serving tongs." />
                             </a>
                         </div>
                         <div className={styles.description}>
-                            <h4>Why is everything closed?</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <h4>Celebrating Hanukkah in Manchester</h4>
+                            <p>Some of the best things to eat and drink in Manchester during the festival of light (and deep fried food)</p>
                         </div>
                     </motion.div>
                     <motion.div className={styles.card} 
                     variants={item} initial="hidden" animate="show">
                         <div className={styles.image}>
-                            <a href="https://projet5.emmaliefmann.com/index.php?action=allrecipes">
-                                <img src="https://picsum.photos/600/400?random=3" />
+                            <a href="https://www.eatmcr.co.uk/news/the-food-and-drink-businesses-thriving-at-pollard-yard/" target="_blank">
+                                <img src="/img/portfolio/pollardyard.jpeg" alt="A collection of brightly coloured shipping containers in the shadow of an old mill" />
                             </a>
                         </div>
                         <div className={styles.description}>
-                            <h4>Wine certainly helps</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <h4>The food and drink businesses thriving at Pollard Yard</h4>
+                            <p>Speaking to some of the businesses at small business hub Pollard Yard - a place where creativity oozes out of every perfectly painted shipping container</p>
                         </div>
                     </motion.div>
                     <motion.div className={styles.card} variants={item}
