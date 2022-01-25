@@ -25,10 +25,10 @@ const Footer = () => {
                         <FontAwesomeIcon icon={faInstagram} size="4x" className="icon"/> 
                     </a>
                 </div>
-                <p>Site created by Emma Liefmann 2011</p>
+                {/* <p>Site created by Emma Liefmann 2011</p> */}
             </div>
             <div className={styles.container}>
-                <a href="">Sitemap</a>
+                {/* <a href="">Sitemap</a> */}
             </div>
         </footer>
     )

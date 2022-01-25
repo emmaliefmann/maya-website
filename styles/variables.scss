@@ -30,6 +30,11 @@ $title-font: "Bodoni Moda", serif;
   align-items: center;
   justify-content: center;
 }
+@mixin flexboxStart() {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
 @mixin flexboxJust {
   display: flex;
   justify-content: space-between;
@@ -57,7 +62,7 @@ $title-font: "Bodoni Moda", serif;
     width: 100%;
     overflow: hidden;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     img {
       max-width: 100%;
