@@ -1,6 +1,10 @@
 import React from "react";
 import styles from "../styles/Portfolio.module.scss";
 
+
+import algoliasearch from "algoliasearch/lite";
+import { InstantSearch, Pagination , Configure , Hits } from "react-instantsearch-dom";
+
 import { motion } from "framer-motion";
 
 const portfolioPage = () => {

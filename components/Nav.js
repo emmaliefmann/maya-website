@@ -50,6 +50,13 @@ const Nav = () => {
                         animate={{ width: pathname === "/portfolio" ? "100%" : "0%" }}></motion.span>
                     </li>
                     <li onClick={handleClick}>
+                        <Link href='/paginate'>Paginate</Link>
+                        <motion.span className={styles.navLine}
+                        transition={{ duration: 0.75 }}
+                        initial={{ width: "0%" }}
+                        animate={{ width: pathname === "/paginate" ? "100%" : "0%" }}></motion.span>
+                    </li>
+                    <li onClick={handleClick}>
                         <Link href='/contact'>Contact</Link>
                         <motion.span className={styles.navLine}
                         transition={{ duration: 0.75 }}
