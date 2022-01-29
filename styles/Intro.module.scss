@@ -6,7 +6,7 @@
   @include flexboxCenter(column);
   .collage {
     min-height: 480px;
-    width: 100vw;
+    width: 90vw;
     position: relative;
     max-width: 472px;
     img {
@@ -123,7 +123,7 @@
         max-width: 430px;
         left: 29%;
         transform: translateX(-40%);
-        top: 50%;
+        top: 40%;
         transform: translateY(-28%);
       }
     }

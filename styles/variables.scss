@@ -64,9 +64,15 @@ $title-font: "Bodoni Moda", serif;
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    img {
+    a {
       max-width: 100%;
+      max-height: 225px;
+      overflow: hidden;
+      img {
+        max-width: 450px;
+      }
     }
+    
   }
   .description {
     width: 100%;
