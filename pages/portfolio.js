@@ -23,9 +23,9 @@ const portfolioPage = () => {
     },
   };
 
-  const filterHandler = (category) => {
-    console.log(category);
-  };
+  // const filterHandler = (category) => {
+  //   console.log(category);
+  // };
   return (
     <>
       <header className={styles.header}>
