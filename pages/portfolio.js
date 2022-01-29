@@ -32,8 +32,7 @@ const portfolioPage = () => {
         <h1>Portfolio</h1>
         <p>
           Here is a selection of some of my articles including food writing,
-          features, branded content and blogs. Filter the type of content using
-          the keywords below.
+          features, branded content and blogs.
         </p>
       </header>
       <div className={styles.container}>
@@ -46,11 +45,8 @@ const portfolioPage = () => {
           </button>
         </div> */}
 
-        <motion.div
+        <div
           className={styles.cardCtn}
-          variants={container}
-          initial="hidden"
-          animate="show"
         >
           <motion.div
             className={styles.card}
@@ -245,7 +241,7 @@ const portfolioPage = () => {
               Burgerism launched in April 2018, a delivery-only burger concept based in a warehouse in Salford, aiming to offer customers “the best off-premises burger in your neighbourhood”.</p>
             </div>
           </motion.div>
-        </motion.div>
+        </div>
       </div>
     </>
   );

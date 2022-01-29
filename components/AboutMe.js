@@ -18,8 +18,7 @@ export default function AboutMe() {
   
     return (
         <section className={styles.about}>
-          <motion.div className={styles.container}
-          variants={appear} ref={element} animate={controls} initial="hidden">
+          <div className={styles.container}>
             <img src="/img/headshot.jpg" alt="" className={styles.headshot} />
             <img src="img/backgroundleaves.jpg" alt="" className={styles.background} />
             <div className={styles.text}>
@@ -30,7 +29,7 @@ export default function AboutMe() {
                 <button>Work with me</button>
                 </div>
             </div>
-        </motion.div>
+        </div>
       </section>
     )
 }

@@ -14,8 +14,7 @@ export default function FeaturedArticles() {
     },
   };
     return(
-    <motion.section className={styles.featured}
-      variants={appear} ref={element} animate={controls} initial="hidden">
+    <section className={styles.featured}>
         <h3>Featured articles</h3>      
         <div className={styles.container}>
           <div className={styles.card}>
@@ -50,15 +49,15 @@ export default function FeaturedArticles() {
         </div>
         <div className={styles.card}>
           <div className={styles.image}>
-            <a href="https://projet5.emmaliefmann.com/index.php?action=allrecipes" target="_blank">
-              <img src="https://picsum.photos/600/400?random=4" />
+            <a href="https://www.manchestereveningnews.co.uk/news/property/new-islington-urban-splash-regeneration-15520086" target="_blank">
+              <img src="/img/portfolio/cardroom.jpg" />
             </a>
           </div>
           <div className={styles.description}>
-            <h4>Article Title</h4>
+            <h4>Before Ancoats was Ancoats: The Cardroom Estate</h4>
           </div>
         </div>
       </div>    
-    </motion.section>
+    </section>
     )
 }
