@@ -260,20 +260,43 @@ const portfolioPage = () => {
           <motion.div className={styles.card} variants={item}>
             <div className={styles.image}>
               <a
-                href="https://www.eatmcr.co.uk/news/meatco-manchester-meat-delivery-service/"
+                href="https://www.manchestereveningnews.co.uk/special-features/simple-life-homes-rental-market-16003995"
                 target="_blank"
               >
                 <img
-                  src="/img/portfolio/meatco.jpg"
-                  alt="Two women - the owners of MeatCo Manchester"
+                  src="/img/portfolio/simplelife.jpg"
+                  alt="A view from above of new build houses"
                 />
               </a>
             </div>
             <div className={styles.description}>
-              <h4>MeatCo launches quality meat delivery service</h4>
+              <h4>Five reasons why you DON'T need to buy a house</h4>
               <p>
-                You don’t have to go vegan to eat more sustainably – the two
-                Manchester women changing the way we think about meat
+                The benefits of not being a homeowner. A branded content piece
+                on Manchester Evening News for Simple Life Homes.
+              </p>
+            </div>
+          </motion.div>
+          <motion.div className={styles.card} variants={item}>
+            <div className={styles.image}>
+              <a
+                href="https://peopleactivation.com/resources/its-okay-not-to-be-okay-how-empathy-can-strengthen-a-team"
+                target="_blank"
+              >
+                <img
+                  src="/img/portfolio/feelgoodclub2.png"
+                  alt="Two women standing in front of a billboard which reads 'The World is a better place with you in it'"
+                />
+              </a>
+            </div>
+            <div className={styles.description}>
+              <h4>
+                It’s okay not to be okay - how empathy can strengthen a team
+              </h4>
+              <p>
+                Taking inspiration from Manchester-based mental health
+                advocates, Feel Good Club who give realistic advice on taking
+                care of your mental health.
               </p>
             </div>
           </motion.div>
@@ -294,6 +317,26 @@ const portfolioPage = () => {
               <p>
                 Speaking to various pub landlords and business owners about the
                 impact of Tier 3 restrictions on their businesses
+              </p>
+            </div>
+          </motion.div>
+          <motion.div className={styles.card} variants={item}>
+            <div className={styles.image}>
+              <a
+                href="https://www.manchestereveningnews.co.uk/news/property/new-islington-urban-splash-regeneration-15520086"
+                target="_blank"
+              >
+                <img
+                  src="/img/portfolio/cardroom.jpg"
+                  alt="A view from above of new build houses"
+                />
+              </a>
+            </div>
+            <div className={styles.description}>
+              <h4>Before Ancoats was Ancoats: The Cardroom Estate</h4>
+              <p>
+                Goodbye to the old council estate - the pictures that captured
+                an inner city district on the cusp of massive change
               </p>
             </div>
           </motion.div>
@@ -338,7 +381,6 @@ const portfolioPage = () => {
               </p>
             </div>
           </motion.div>
-
           <motion.div className={styles.card} variants={item}>
             <div className={styles.image}>
               <a
@@ -362,6 +404,27 @@ const portfolioPage = () => {
           <motion.div className={styles.card} variants={item}>
             <div className={styles.image}>
               <a
+                href="https://peopleactivation.com/resources/three-ways-meditation-can-improve-your-working-day"
+                target="_blank"
+              >
+                <img
+                  src="/img/portfolio/yogamed.jpg"
+                  alt="A person sat cross legged with candles, incense and rocks in front of her"
+                />
+              </a>
+            </div>
+            <div className={styles.description}>
+              <h4>Three ways meditation can improve your working day</h4>
+              <p>
+                Meditation is more than just about deep breathing. Studies have
+                shown that meditation can actually change the shape of our brain
+                and could even cause it to reverse age.
+              </p>
+            </div>
+          </motion.div>
+          <motion.div className={styles.card} variants={item}>
+            <div className={styles.image}>
+              <a
                 href="https://www.eatmcr.co.uk/culture/the-salford-burger-kitchen-that-can-get-more-than-1000-orders-a-day/"
                 target="_blank"
               >
@@ -377,6 +440,89 @@ const portfolioPage = () => {
                 Burgerism launched in April 2018, a delivery-only burger concept
                 based in a warehouse in Salford, aiming to offer customers “the
                 best off-premises burger in your neighbourhood”.
+              </p>
+            </div>
+          </motion.div>
+          <motion.div className={styles.card} variants={item}>
+            <div className={styles.image}>
+              <a
+                href="https://www.eatmcr.co.uk/new-openings/award-winning-bartender-brothers-open-schofields-bar-whose-classic-cocktails-have-drawn-huge-queues/"
+                target="_blank"
+              >
+                <img
+                  src="/img/portfolio/schofields.jpg"
+                  alt="Bartender pours prosecco into a cocktail"
+                />
+              </a>
+            </div>
+            <div className={styles.description}>
+              <h4>Schofield brothers open Manchester bar</h4>
+              <p>
+                The award-winning bartender brothers open Schofield’s Bar –
+                whose classic cocktails have drawn two-hour queues
+              </p>
+            </div>
+          </motion.div>
+          <motion.div className={styles.card} variants={item}>
+            <div className={styles.image}>
+              <a
+                href="https://www.eatmcr.co.uk/news/eat-well-manchester-restaurant-charity/"
+                target="_blank"
+              >
+                <img
+                  src="/img/portfolio/eatwell.jpg"
+                  alt="Two men wearing hi-vis vests hold crates with meal deliveries"
+                />
+              </a>
+            </div>
+            <div className={styles.description}>
+              <h4>
+                Eat Well provides 40,000 meals to the vulnerable in Manchester
+              </h4>
+              <p>
+                “Life is going back to normal but it isn’t for these people” –
+                the restaurant-run non-profit feeding Manchester’s most
+                vulnerable
+              </p>
+            </div>
+          </motion.div>
+          <motion.div className={styles.card} variants={item}>
+            <div className={styles.image}>
+              <a
+                href="https://www.eatmcr.co.uk/news/things-to-eat-and-drink-when-its-sunny-in-manchester/"
+                target="_blank"
+              >
+                <img
+                  src="/img/portfolio/heatwave.png"
+                  alt="A split image showing cocktails on the left and a stack of ice cream sandwiches on the right"
+                />
+              </a>
+            </div>
+            <div className={styles.description}>
+              <h4>Things To Eat And Drink When It’s Sunny In Manchester</h4>
+              <p>
+                Ice cream, margaritas, summery dishes and more - all the good
+                stuff to enjoy in the heat
+              </p>
+            </div>
+          </motion.div>
+          <motion.div className={styles.card} variants={item}>
+            <div className={styles.image}>
+              <a
+                href="https://www.eatmcr.co.uk/news/meatco-manchester-meat-delivery-service/"
+                target="_blank"
+              >
+                <img
+                  src="/img/portfolio/meatco.jpg"
+                  alt="Two women - the owners of MeatCo Manchester"
+                />
+              </a>
+            </div>
+            <div className={styles.description}>
+              <h4>MeatCo launches quality meat delivery service</h4>
+              <p>
+                You don’t have to go vegan to eat more sustainably – the two
+                Manchester women changing the way we think about meat
               </p>
             </div>
           </motion.div>
